@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color: #edf6f9;
+    color: #023e8a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation and Menu Bars */
+
+.top-bar {
+    font-family: 'Lora', serif;
+}
+
+.top-bar h1  {
+    font-size: 40px;
+}
+
+.flag {
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #023e8a;
+}
+
+header {
+    margin: 0;
+    background-color: #ED3833;  
+}
+
+nav {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+}
+
+.left-nav a {
+    text-decoration: none;
+    color: #023e8a;
+    font-weight: 700;
+}
+
+.left-nav a:hover {
+    color: #fca311;
+}
+
+section {
+    margin: 20px;
+}
+
+/* Footer Section */
+
+footer {
+    margin: 0;
+    padding: 40px 0;
+    line-height: 40px;
+    font-family: 'Lora', serif;
+    background-color: #ED3833;  
+}
+
+.icons:hover {
+    cursor: pointer;
+}
+
+/* Videos & Images */
+
+.videos, .img {
+    width:560px;
+    height:315px;
+}
+
+/* Buttons */
+
+button {
+    font-size: 18px;
+    color: #edf6f9;
+    background-color: #1d3557;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 15px;
+}
+
+button:hover {
+    color: #1d3557;
+    background-color: #edf6f9;
+    cursor: pointer;
+    border: #1d3557 1px solid;
+}
+
+button a {
+    text-decoration: none;
+    color: #edf6f9;
+}
+
+button a:hover {
+    color: #1d3557;
+    background-color: #edf6f9;
+    cursor: pointer;
+}
+
+/* Home Page */
+
+.styles {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.mission {
+    margin: 0 auto;
+    padding: 30px;
+    width: 500px;
+}
+
+/* About Us */
+
+.about p {
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Housing */
+
+.housing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+/* Site Seeing */
+
+.site-seeing {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+/*  Cities & Attractions */
+.city p, .sites p, .seeing {
+    padding: 20px;
+}
+
+/* Gallery Page */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.heading {
+    margin: 50px;
+}
+
+.heading p {
+    padding: 20px 0;
+}
+
+.ohio-images img {
+    height: 300px;
+    width: 220px;
+}
+
+.title {
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+
+.ohio-images {
+    background-color: #ED3833;
+    padding: 20px 5px;
+}
+
+.description {
+    font-size: 18px;
+}
+
+/* Contact Us */
+
+form {
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.info {
+    margin: 0 auto;
+    padding: 25px;
+    width: 350px;
+}
+
+/*  Media Queries  */
+
+@media screen and (max-width:1050px) {
+    .gallery, .site-seeing {
+        grid-template-columns: repeat(3, 1fr);
+    } 
+}
+
+@media screen and (max-width:900px) {
+    .gallery, .site-seeing, .housing {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        row-gap: 20px;
+    }  
+}
+
+@media screen and (max-width:700px) {
+    .img, .mission,.videos {
+        width: 400px;
+    }
+
+    .gallery, .site-seeing, .housing {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+}
